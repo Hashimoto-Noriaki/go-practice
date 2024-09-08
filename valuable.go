@@ -5,6 +5,11 @@ import "fmt"
 //i5 := 500
 var i5 int = 500
 
+func outer() {
+	var s4 string = "outer"
+	fmt.Println(s4)
+}
+
 func main(){
 	//明示的な定義
 	// var 変数名　型　= 値
@@ -65,5 +70,13 @@ func main(){
 
 	fmt.Println(i5)
 	//500  上で定義されている
+
+	//型指定でバグを防ぐ　　他の人のコードが見やすくなる
+	outer()
+	//outer
+
+	var s5 string = "Not Use"
+	fmt.Println(s5)
+	//Not Use
 }
 
