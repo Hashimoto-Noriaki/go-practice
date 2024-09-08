@@ -1,8 +1,10 @@
 package main
+import "fmt"
 //変数
-import (
-	"fmt"
-)
+
+//i5 := 500
+var i5 int = 500
+
 func main(){
 	//明示的な定義
 	// var 変数名　型　= 値
@@ -41,5 +43,31 @@ func main(){
 	1500
 	値の更新をした
 	*/
+
+	/*
+	暗黙的な定義
+	変数名　:= 値 
+	*/
+	i4 := 4000
+	fmt.Println(i4)
+	//4000
+
+	i4 = 4500
+	fmt.Println(i4)
+	//4500
+
+	// i4 := 5000
+	// fmt.Println(i4)
+	// i4 = "いえい"
+	/* fmt.Println(i4)
+	# command-line-arguments
+	./valuable.go:59:7: cannot use "いえい" (untyped string constant) as int value in assignment */
+
+	fmt.Println(i5)
+	//500  上で定義されている
+
+
+	//型指定でバグを防ぐ　　他の人のコードが見やすくなる
+
 }
 
