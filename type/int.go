@@ -15,3 +15,10 @@ func main() {
 
 	fmt.Printf("%T\n", int64(i2))
 }
+/*
+150
+%T
+200
+int32
+int64
+*/
