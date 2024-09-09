@@ -22,14 +22,12 @@ func main() {
 	fmt.Println(true != false)
 }
 /*
-3
-WaterMelon
-7
-40
-10
-1
-4
-5
-4
-WaterMelon
+true
+false
+true
+false
+true
+true
+false
+true
 */
